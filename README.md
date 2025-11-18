@@ -13,33 +13,33 @@ Trabalhar com elementos visuais e design utilizando CSS3, explorando sistemas de
 ## ✅ Checklist da Atividade
 
 ### 1. Preparação do Ambiente
-- [ ] Realizar o fork deste repositório
+- [X] Realizar o fork deste repositório
   - ou
-    - [ ] Clonar o repositório forkado para sua máquina, 
-    - [ ] Abrir o projeto no editor de código
+    - [X] Clonar o repositório forkado para sua máquina, 
+    - [X] Abrir o projeto no editor de código
   - ou
     - [ ] Usar o codespace para edição
-- [ ] Construir a programação visual em style.css de acordo com as indicações abaixos
+- [ ] Construir a programação visual em style.css de acordo com as indicações abaixo
 
 ### 2. Sistemas de Cores em CSS
-- [ ] **2.1** Aplicar cores usando nomes de cores (ex: `red`, `blue`, `green`)
-- [ ] **2.2** Aplicar cores usando sistema hexadecimal (ex: `#FF0000`, `#00FF00`)
-- [ ] **2.3** Aplicar cores usando RGB (ex: `rgb(255, 0, 0)`)
+- [X] **2.1** Aplicar cores usando nomes de cores (ex: `red`, `blue`, `green`)
+- [X] **2.2** Aplicar cores usando sistema hexadecimal (ex: `#FF0000`, `#00FF00`)
+- [X] **2.3** Aplicar cores usando RGB (ex: `rgb(255, 0, 0)`)
 - [ ] **2.4** Aplicar cores usando RGBA com transparência (ex: `rgba(255, 0, 0, 0.5)`)
 - [ ] **2.5** Aplicar cores usando HSL (ex: `hsl(0, 100%, 50%)`)
 - [ ] **2.6** Criar uma paleta de cores com pelo menos 5 cores diferentes
 
 ### 3. Tipografia
-- [ ] **3.1** Definir `font-family` com fontes do sistema (ex: Arial, Helvetica, sans-serif)
-- [ ] **3.2** Aplicar diferentes tamanhos de fonte com `font-size` (px, em, rem, %)
-- [ ] **3.3** Usar `font-weight` para variar a espessura da fonte (normal, bold, 100-900)
+- [X] **3.1** Definir `font-family` com fontes do sistema (ex: Arial, Helvetica, sans-serif)
+- [X] **3.2** Aplicar diferentes tamanhos de fonte com `font-size` (px, em, rem, %)
+- [X] **3.3** Usar `font-weight` para variar a espessura da fonte (normal, bold, 100-900)
 - [ ] **3.4** Ajustar espaçamento entre linhas com `line-height`
-- [ ] **3.5** Implementar Google Fonts no projeto
+- [X] **3.5** Implementar Google Fonts no projeto
 - [ ] **3.6** Usar pelo menos 2 fontes diferentes do Google Fonts
 - [ ] **3.7** Aplicar outros estilos tipográficos (font-style, text-decoration, text-transform)
 
 ### 4. Backgrounds
-- [ ] **4.1** Aplicar `background-color` em diferentes elementos
+- [X] **4.1** Aplicar `background-color` em diferentes elementos
 - [ ] **4.2** Adicionar `background-image` usando URLs de imagens
 - [ ] **4.3** Controlar o tamanho da imagem de fundo com `background-size` (cover, contain, valores específicos)
 - [ ] **4.4** Posicionar imagens de fundo com `background-position` (center, top, bottom, left, right)
