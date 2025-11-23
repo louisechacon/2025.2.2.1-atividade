@@ -1,41 +1,423 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 * {
-    font-family: Roboto, "Stack Sans Notch", sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-main {
-    background-color: rgb(210, 255, 210);
+body {
+    background-color: #ffffff;
+    font-family: Roboto, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.subtitulo {
-    background-color: #ddd;
+.container {
+    max-width: 1000px;
+    margin: auto;
     padding: 15px;
 }
 
-header h1 {
-    color: red;
-    background-color: aliceblue;
-}
-
 .header-principal {
-    margin-top: 30px;
+    padding: 25px;
+    background-color: #24263B;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
 }
 
 .cabecalho {
-    margin-bottom: 30px;
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .subtitulo {
-    margin-bottom: 30px;
     padding-top: 5px;
     font-weight: bold;
+    padding: 15px;
+    color: #FF80A1;
+}
+
+/* 1. Sistemas de cores em CSS*/
+
+.exemplo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: first baseline;
+    padding: 20px 0;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 25%;
+    min-width: 150px;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #FF80A1;
+}
+
+.card p {
+    color: #151624;
 }
 
 .secao {
     margin-bottom: 30px;
+}
+
+/* Paleta de Cores do Projeto */
+
+.paleta-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+}
+
+.cor-item {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.cor-item span {
+    font-weight: bold;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-style: italic;
+}
+
+.cor-primaria {
+    background-color: #24263B;
+}
+
+.cor-secundaria {
+    background-color: #FF80A1;
+}
+
+.cor-terciaria {
+    background-color: #151624;
+}
+
+.cor-acento {
+    background-color: #D66082;
+}
+
+.cor-neutra {
+    background-color: #ffffff;
+}
+
+/* 2. Tipografia */
+
+.exemplo-tipografia {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.tipo-exemplo {
+    flex-grow: 1;
+    flex-basis: 300px;
+    background-color: #24263B;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.tipo-exemplo h3 {
+    color: #D66082;
+    margin-bottom: 15px;
+}
+
+.tipo-exemplo p {
+    color: white;
+}
+
+.tipo-playfair {
+    font-family: 'Playfair Display', serif;
+}
+
+.tamanho-14 {
+    font-size: 14px;
+}
+
+.tamanho-16 {
+    font-size: 16px;
+}
+
+.tamanho-18 {
+    font-size: 18px;
+}
+
+.tamanho-24 {
+    font-size: 24px;
+}
+
+.tipo-exemplo.espacamento p {
+    line-height: 1.5;
+}
+
+/* 3. Backgrounds */
+
+.exemplo-grid {
+    display: flex;
+    align-items: stretch;
+}
+
+.exemplo-grid .card:hover {
+    transform: scale(1.05);
+}
+
+.bg-cor,
+.bg-imagem,
+.bg-cover,
+.bg-contain {
+    flex-grow: 1;
+    flex-basis: 200px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.card.bg-cor {
+    background-color: #151624;
+}
+
+.card.bg-cor p {
+    color: rgb(255, 255, 255);
+}
+
+.card.bg-imagem p,
+.card.bg-cover p,
+.card.bg-contain p {
+    font-weight: bold;
+    color: white;
+}
+
+.card.bg-imagem {
+    background-image: url('https://blog-static.petlove.com.br/wp-content/uploads/2021/09/gata-tricolor-Petlove.jpg');
+    background-repeat: repeat;
+    background-color: #151624;
+    color: rgb(255, 255, 255);
+}
+
+.bg-cover {
+    background-image: url('https://blog-static.petlove.com.br/wp-content/uploads/2021/09/gata-tricolor-Petlove.jpg');
+    background-size: cover;
+    background-repeat: repeat;
+    background-color: #151624;
+}
+
+.bg-contain {
+    background-image: url('https://blog-static.petlove.com.br/wp-content/uploads/2021/09/gata-tricolor-Petlove.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #151624;
+    background-position: center;
+}
+
+/* Background Position */
+
+.posicao-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pos-item {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-image: url('https://blog-static.petlove.com.br/wp-content/uploads/2021/09/gata-tricolor-Petlove.jpg');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    color: white;
+    background-color: #D66082;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pos-item:hover {
+    transform: scale(1.05);
+}
+
+.bg-pos-center {
+    background-position: center;
+}
+
+.bg-pos-top {
+    background-position: top;
+}
+
+.bg-pos-bottom {
+    background-position: bottom;
+}
+
+.bg-pos-left {
+    background-position: left;
+}
+
+.bg-pos-right {
+    background-position: right;
+}
+
+/* 4. Gradientes CSS */
+
+.gradientes-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.gradiente-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    flex-basis: 300px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 15px;
+}
+
+.gradiente-item h3 {
+    color: white;
+    font-size: 20px;
+}
+
+.gradiente-item code {
+    display: block;
+    background-color: rgba(231, 183, 229, 0.5);
+    color: #24263B;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.grad-linear-2 {
+    background-image: linear-gradient(to right, #FF80A1, #D66082);
+}
+
+.grad-linear-3 {
+    background-image: linear-gradient(to right, #FFC2D1, #FF80A1, #C94070);
+}
+
+.grad-linear-diagonal {
+    background-image: linear-gradient(45deg, #24263B, #D66082, #FF80A1);
+}
+
+.grad-radial {
+    background-image: radial-gradient(circle, #FF80A1, #D66082);
+}
+
+.grad-complexo {
+    background-image: linear-gradient(135deg, #FFC2D1 0%, #FF80A1 50%, #9B4DCA 100%);
+}
+
+.grad-radial-complexo {
+    background-image: radial-gradient(circle at top left, #FF80A1, #D66082, #FDE68A);
+    S
+}
+
+
+/* 5. Exercício Prático */
+
+.exercicio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card-exercicio {
+    width: 90%;
+    max-width: 250px;
+    padding: 25px;
+    background-color: #24263B;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.10);
+    text-align: center;
+}
+
+.card-exercicio:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card-exercicio h4 {
+    color: #D66082;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card-exercicio p {
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.btn-exercicio {
+
+    border: none;
+    background-color: #FF80A1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: 'Helvetica Neue';
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-exercicio:hover {
+    background-color: #FFB3C9;
+    transform: translateY(-1px);
+}
+
+
+/* Footer */
+
+.footer-principal {
+    color: #ffffff;
+    padding: 15px;
+    background-color: #151624;
+    text-align: center;
 }
